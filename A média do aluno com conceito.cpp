@@ -1,8 +1,24 @@
 #include<stdio.h>
 #include<locale.h>
 
+/*Um programa para calcular e exibir a média aritmética e o conceito de 10 
+alunos. Para cada um dos alunos, o programa deve solicitar e ler as notas das três 
+provas, calcular e exibir a média aritmética e informar o conceito obtido, de acordo 
+com a tabela a seguir:
+*/
+
+// |---------------------------|
+// |----Média----|---Conceito--|
+// |	>= 9     |      A      |
+// |  >= 7 e < 9 |      B      |
+// |  >= 6 e < 7 |      C      |
+// |  >= 4 e < 6 |      D      |
+// | 	< 4	 |      E      |
+// |---------------------------|
+
 int main(){
-	setlocale(LC_ALL, "Portuguese");
+	
+setlocale(LC_ALL, "Portuguese");
 
 float n1, n2, n3, ma;
 int i;
@@ -10,11 +26,13 @@ int i;
     for (i = 0; i < 10; i++){
 	
     printf("Informe a primeira nota: ");
-    scanf("%f", &n1);
+    	scanf("%f", &n1);
+	    
     printf("Informe a segunda nota: ");
-    scanf("%f", &n2);
+    	scanf("%f", &n2);
+	    
     printf("Informe a terceira nota: ");
-    scanf("%f", &n3); 
+    	scanf("%f", &n3); 
 
     ma = (n1+n2+n3)/3;
 
